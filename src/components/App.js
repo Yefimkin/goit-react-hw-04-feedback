@@ -39,7 +39,7 @@ function App() {
       <Container>
           <Section title="Please leave feedback">
             <FeedbackOptions
-              options={['good', 'neutral', 'bad']}
+              options={Object.keys({ good, neutral, bad })}
               onLeaveFeedback={addFeedback}
             />
           </Section>
